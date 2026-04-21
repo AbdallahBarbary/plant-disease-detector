@@ -24,31 +24,7 @@ plant_disease_app/
 │   ├── css/style.css     ← Styles
 │   └── js/main.js        ← Frontend logic
 └── uploads/              ← Temp folder (auto-created, auto-cleaned)
-```
-
----
-
-## ⚙️ Setup & Installation
-
-### 1. Clone the repo
-```bash
-git clone https://github.com/AbdallahBarbary/plant-disease-detector
-cd plant_disease_app
-```
-
-### 2. Create virtual environment
-```bash
-python -m venv venv
-source venv/bin/activate        # Mac/Linux
-venv\Scripts\activate           # Windows
-```
-
-### 3. Install dependencies
-```bash
-pip install -r requirements.txt
-```
-
----
+``
 
 
 
@@ -149,4 +125,3 @@ file: <image file>
 ---
 
 > - Built REST API with Flask serving real-time image classification with top-3 predictions and treatment recommendations
-> - Deployed live on Hugging Face Spaces — [link]

@@ -50,30 +50,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🗂️ Download Dataset
 
-1. Go to: https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset
-2. Download and extract so the structure looks like:
-```
-data/
-  train/
-    Apple___Apple_scab/      ← folder per class
-    Apple___Black_rot/
-    Apple___healthy/
-    Tomato___Late_blight/
-    ... (38 classes total)
-  valid/
-    Apple___Apple_scab/
-    ...
-```
-
----
-
-## 🏋️ Train the Model
-
-```bash
-python train.py
-```
 
 **What happens:**
 - Phase 1 (10 epochs): Trains only the classification head on top of frozen MobileNetV2
@@ -92,30 +69,6 @@ python train.py
 ---
 
 ## 🚀 Run Locally (Flask)
-
-```bash
-python app.py
-```
-
-Open your browser: **http://localhost:5000**
-
----
-
-## 🤗 Deploy to Hugging Face Spaces (Free, Public URL)
-
-1. Create a free account at [huggingface.co](https://huggingface.co)
-2. Click **New Space** → Name: `plant-disease-detector` → SDK: **Gradio**
-3. Upload these files to the Space:
-   - `hf_app.py` → rename to `app.py`
-   - `model/plant_disease_model.h5`
-   - `model/class_names.json`
-   - `requirements.txt`
-4. Hugging Face auto-installs and launches.
-5. Your live URL: `https://huggingface.co/spaces/AbdallahBarbary/plant-disease-detector`
-
-**Add this link to your resume and GitHub!**
-
----
 
 ## 🌿 Supported Plant & Disease Classes (38 total)
 
@@ -195,9 +148,5 @@ file: <image file>
 
 ---
 
-## 📄 Resume Description (copy this)
-
-> **Plant Disease Detection Web App** · Python · TensorFlow · Flask · Transfer Learning
-> - Trained MobileNetV2 CNN using transfer learning on 87,000+ PlantVillage images achieving ~95% validation accuracy across 38 disease classes
 > - Built REST API with Flask serving real-time image classification with top-3 predictions and treatment recommendations
 > - Deployed live on Hugging Face Spaces — [link]
